@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+body{
+    background-color:rgb(20, 228, 72);
+   
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: rgb(212, 209, 16);
+    box-shadow:  5px 5px 12px black,
+    5px 5px 12px rgba(0, 0, 0, 0.6);
+    width: 400px;
+    border-radius: 5px;
+}
+.header{
+    background-color: rgba(204, 12, 156, 0.5);;
+    color: silver;
+    text-align: center;
+    padding: 20px 40px;
+    margin-bottom: 20px solid silver;
+    border-radius: 5px;
+}
+.form{
+    padding: 30px 40px ;
+     
+}
+.form-group{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input{
+    display: block;
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    font-size: .8rem;
+    width: 100%;
+    padding: 10px;
+}
+.form-group i{
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    visibility: hidden;
+}
+.form-group span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bolder;
+    font-size: 1rem;
+    visibility: hidden;
+}
+.form-group.success input {
+    border-color: #2ecc71;
+
+}
+.form-group.error input{
+    border-color:#e74c3c;
+}
+.form-group.error span{
+    color: #e74c3c;
+    visibility: visible;
+}
+.form-group.success i.ion-checkmark-circled{
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-group.error i.ion-android-alert{
+    color: #e74c3c;
+    visibility: visible;
+}
+.form #submit {
+    background-color: rgb(197, 31, 133);
+    color:white;
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.form #submit:hover{
+    background-color: rgb(231, 213, 213);
+    color:black;
+}
+@media only screen and (max-width : 500px){
+    .form{
+        width: 100%;
+    }
+    .form-group span{
+            font-size: xx-small;
+    }
+}
